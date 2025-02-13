@@ -195,7 +195,7 @@ async function getLocationAndWeather() {
                 }
             },
             {
-                timeout: 10000, // 10 second timeout
+                timeout: 120000, // 120 seconds timeout
                 maximumAge: 300000 // Cache location for 5 minutes
             }
         );
