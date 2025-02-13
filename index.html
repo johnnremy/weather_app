@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml"
+    href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%234a90e2"/><circle cx="30" cy="40" r="20" fill="white"/><circle cx="60" cy="40" r="20" fill="white"/><circle cx="45" cy="50" r="18" fill="white"/></svg>' />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Weather App</h1>
+      <p class="subtitle">Check real-time weather for any city</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Search Section -->
+      <section class="search-section">
+        <div class="search-container">
+          <input type="text" id="cityInput" class="city-input" placeholder="Enter city name..."
+            aria-label="Enter city name">
+          <button id="searchButton" class="search-button">
+            Search
+          </button>
+        </div>
+        <div class="location-actions">
+          <button id="retryLocation" class="retry-button">
+            <span class="retry-icon">📍</span> Get My Location
+          </button>
+        </div>
+        <div id="errorMessage" class="error-message"></div>
+      </section>
+
+      <!-- Weather Display Section -->
+      <section class="weather-section">
+        <div id="weatherInfo" class="weather-info hidden">
+          <div class="weather-header">
+            <h2 id="cityName" class="city-name">City Name</h2>
+            <div id="weatherIcon" class="weather-icon"></div>
+          </div>
+
+          <div class="weather-grid">
+            <div class="weather-card">
+              <h3>Temperature</h3>
+              <p id="temperature" class="weather-value">--°C</p>
+            </div>
+            <div class="weather-card">
+              <h3>Description</h3>
+              <p id="description" class="weather-value">--</p>
+            </div>
+            <div class="weather-card">
+              <h3>Humidity</h3>
+              <p id="humidity" class="weather-value">--%</p>
+            </div>
+            <div class="weather-card">
+              <h3>Wind Speed</h3>
+              <p id="windSpeed" class="weather-value">-- km/h</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner hidden">
+          <div class="spinner"></div>
+          <p>Fetching weather data...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>Created with ❤️ | Using OpenWeather API</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
