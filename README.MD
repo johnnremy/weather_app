@@ -133,7 +133,7 @@ async function fetchWeatherData(city) {
 The Weather Application project successfully demonstrates the implementation of a modern web application using HTML, CSS, and JavaScript. It provides a solid foundation for future improvements while maintaining clean code structure and user-friendly interface.
 
 ## Live Demo
-[View Live Demo](https://your-deployment-url.com)
+[View Live Demo](https://remys-weather-app.netlify.app)
 
 ## Setup Instructions
 1. Clone the repository
